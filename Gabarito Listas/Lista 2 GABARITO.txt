@@ -1,0 +1,82 @@
+Lista 2
+1. 
+< int, KW >
+< main, ID >
+< (, PT >
+< ), PT >
+< {, PT >
+< int, KW >
+< x, ID >
+< =, OP >
+< -2, LN >
+< , , PT >
+< y, ID >
+< =, OP >
+< 4, LN >
+< ;, PT >
+< int, KW >
+< z, ID >
+< =, OP >
+< x, ID >
+< *, OP >
+< y, ID >
+< ;, PT >
+< printf, ID >
+< (, PT >
+< "Valor: %d", LC >
+< , , PT >
+< z, ID >
+< ), PT >
+< ;, PT >
+< return, KW >
+< 0, LN >
+< ;, PT >
+< }, PT >
+
+2.
+< public, KW
+< class, KW >
+< MinhaClasse, ID >
+< {, SP >
+< public, KW >
+< static, KW >
+< double, KW >
+< minhaFuncao, ID >
+< (, SP >
+< int, KW >
+< n, ID >
+< ), SP >
+< {, SP >
+< double, KW >
+< soma, ID >
+< =, OP >
+< 0.0, LT >
+< ;, SP >
+< for, KW >
+< (, SP >
+< int, KW >
+< i, ID >
+< =, OP >
+< 1, LT >
+< ;, SP >
+< i, ID >
+< <=, OP >
+< n, ID >
+< ;, SP >
+< i, ID >
+< ++, OP >
+< ), SP >
+< soma, ID >
+< =, OP >
+< soma, ID >
+< +, OP >
+< 1, LT >
+< ;, SP >
+< return, KW >
+< soma, ID >
+< ;, SP >
+< }, SP >
+< }, SP >
+
+
+

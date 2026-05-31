@@ -1,0 +1,128 @@
+
+
+
+C05B - Lista de Exercícios 4
+A entrega deste exercício entra como parte da nota LE1.
+Em caso de dúvidas, favor consultar o plano de ensino, disponível no Portal Acadêmico.
+_________________________________________________________________________________________________________________
+
+Crie códigos em Python que respondam às perguntas abaixo. Texto Base:
+
+Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz.
+
+Observações:
+·      Uma sugestão é utilizar recursos online para testar suas soluções, tais como: https://rubular.com/, https://pythex.org/ e https://regex101.com/.
+·      Comece tentando resolver o caso mais simples (caso base) de um REGEX, e em seguida, incremente-o para atender ao máximo de casos possíveis.
+·      Interpretador online de Python: https://www.programiz.com/python-programming/online-compiler/
+·      Dicas e oportunidades de prática de Regex: https://www.w3schools.com/python/python_regex.asp
+Olá, caroline.souza@ges.inatel.br. Quando você enviar este formulário, o proprietário verá seu nome e endereço de email.
+Obrigatória
+1.Código que substitua todas as palavras maiores que 5 caracteres por astericos (*).
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# substitui os matches encontrados
+x = re.sub(r'\b\w{6,}\b', '*', txt) # \b - qualquer limite de palavra
+                                                     # \w - qualquer caráter não-palavra
+
+# saida de dados
+print(x)
+2.Código que retorne uma lista apenas das palavras que contém caracteres com acentos.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# retorna uma lista contendo todos os padrões identificados 
+x = re.findall(r'\b\w*[áàâãéèêíïóôõöúçÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇ]\w*\b', txt) # \b - qualquer limite de palavra
+                                                                                                                          # \w - qualquer caráter não-palavra
+
+# saida de dados
+print(x)
+3.Código que em um único REGEX, troque as letras maiúsculas por minúsculas, e vice-versa.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# substitui os matches encontrados
+x = re.sub(r'[A-Za-zÁ-Úá-ú]', lambda x: x.group().lower() 
+                                                  if x.group().isupper() 
+                                                 else x.group().upper(), txt)
+
+# saida de dados
+print(x)
+4.Código que retorna a posição inicial e final da maior palavra do texto.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# retornando as strings de todos os matches
+x = re.finditer(r'\b\w+\b', txt)
+
+maior = max(x, key=lambda x: len(x.group()))
+
+# saida de dados - retorna uma tupla contendo a posição inicial e final de um
+match
+print(maior.span()) 
+5.Código que retorna uma lista apenas com as palavras que possuam de 2 a 6 letras.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# retorna uma lista contendo todos os padrões identificados  
+x = re.findall(r'\b\w{2,6}\b', txt)
+
+# saida de dados
+print(x)
+6.Código que retorna uma lista de Strings que deverão ser quebradas toda vez que for encontrada uma letra maiúscula.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+#  retorna uma lista onde um texto foi quebrado em cada match
+encontrado
+x = re.split(r'[A-Z])', txt)
+
+# saida de dados
+print(x)
+7.Código que retorne todas as palavras que contenham vogais.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# retorna uma lista contendo todos os padrões identificados 
+x = re.findall(r'\b\w*[aeiouAEIOUáàâãéèêíóôõúÁÀÂÃÉÈÊÍÓÔÕÚ]\w*\b', txt)
+
+# saida de dados
+print(x)
+8.Código que responda quantas letras o texto base possui.
+# biblioteca
+import re
+
+# entrada de dados
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz."
+
+# retorna uma lista contendo todos os padrões identificados 
+x = re.findall(r'[A-Za-zÁ-á]', txt)
+
+# saida de dados - para pegar o tamanho da lista retornada.
+print(len(x)) 
+Enviar
+Microsoft 365
+Este conteúdo foi criado pelo proprietário do formulário. Os dados que você enviar serão enviados ao proprietário do formulário. A Microsoft não é responsável pela privacidade ou práticas de segurança de seus clientes, incluindo aqueles do proprietário deste formulário. Nunca forneça sua senha.
+Microsoft Forms | Pesquisas, questionários e votações com tecnologia de IACriar meu próprio formulário
+Política de privacidade | Condições de uso

@@ -1,0 +1,80 @@
+C05 - Lista de Exercícios 8
+
+Responda as seguintes perguntas sobre a Gramática Livre de Contexto (G) abaixo.
+
+R -> XRX | S
+S -> aTb | bTa
+T -> XTX | X | ɛ
+X -> a | b
+
+1. Quais são os símbolos não-terminais de G?
+	N={R,S,T,X}
+2. Quais são os símbolos terminais de G?
+	Σ={a,b}
+3. Qual é o símbolo de início de G?
+	S_0​=R
+4. Apresente 2 strings válidas em G.
+	String 1: ab R -> S -> aTb -> aeb = ab  
+	String 2: aab R -> S -> aTb -> aXb -> aab
+5. Apresente 2 strings não válidas em G.
+	String 1: a e String 2: aaa
+6. Quais são os símbolos não-terminais de G?
+	N={⟨assign⟩, ⟨id⟩, ⟨expr⟩}
+7. Quais são os símbolos terminais de G?
+	Σ={A, B, C, D, E, =, +, −, ∗, /, (, )}
+8. Qual é o símbolo inicial de G?
+	S_0 =⟨assign⟩
+9. 	Mostre uma derivação mais à esquerda para a sentença A = B / (C – (D * E)).
+1     <assign>                                       —
+2     <id> = <expr>                           <assign> → <id> = <expr>
+3     A = <expr>                                <id> → A
+4     A = <id> / <expr>                    <expr> → <id> / <expr>
+5     A = B / <expr>                          <id> → B
+6     A = B / (<expr>)                       <expr> → (<expr>)
+7     A = B / (<id> - <expr>)            <expr> → <id> - <expr>
+8     A = B / (C - <expr>)                 <id> → C
+9     A = B / (C - (<expr>))               <expr> → (<expr>)
+10   A = B / (C - (<id> * <expr>))   <expr> → <id> * <expr>
+11   A = B / (C - (D * <expr>))        <id> → D
+12   A = B / (C - (D * <id>))            <expr> → <id>
+13   A = B / (C - (D * E))                  <id> → E
+10. Mostre uma derivação mais à direita para a sentença A = B / (C – (D * E)).
+1      <assign>                                                       —
+2      <id> = <expr>                                            <assign> → <id> = <expr>
+3      <id> = <id> / <expr>                                <expr> → <id> / <expr>
+4      <id> = <id> / (<expr>)                              <expr> → (<expr>)
+5      <id> = <id> / (<id> - <expr>)                   <expr> → <id> - <expr>
+6      <id> = <id> / (<id> - (<expr>))                 <expr> → (<expr>)
+7      <id> = <id> / (<id> - (<id> * <expr>))     <expr> → <id> * <expr>
+8      <id> = <id> / (<id> - (<id> * <id>))         <expr> → <id>
+9      <id> = <id> / (<id> - (<id> * E))                <id> → E
+10    <id> = <id> / (<id> - (D * E))                      <id> → D
+11    <id> = <id> / (C - (D * E))                            <id> → C
+12    <id> = B / (C - (D * E))                                 <id> → B
+13    A = B / (C - (D * E))                                      <id> → A
+Seja G = {{+,*,(,),a}, {E,T,F}, E, P}, em que P consiste de:
+
+E -> E + T | T
+  T -> T * F | F
+  F -> (E) | a
+11. Verifique se a sentença a + a *a é válida nesta gramática.
+Sim, é válida!
+1    E                       —
+2    E + T               E → E + T
+3    T + T               E → T
+4    F + T               T → F
+5    a + T               F → a
+6    a + T * F          T → T * F
+7    a + F * F          T → F
+8    a + a * F          F → a
+9    a + a * a          F → a
+12. Crie uma Árvore de Derivação mais à esquerda para a sentença. Enumere cada passo da derivação, conforme a árvore é montada.
+Observação: desenhe a árvore na ferramenta de sua preferência (ou  no caderno), tire uma foto / captura de tela, faça upload da imagem no  site https://imgur.com/ e cole a URL de  compartilhamento no campo de  resposta.
+https://imgur.com/a/pCwZHlS
+13. Crie uma Árvore de Derivação mais à direita para a sentença. Enumere cada passo da derivação, conforme a árvore é montada.
+Observação: desenhe a árvore na ferramenta de sua preferência (ou  no caderno), tire uma foto / captura de tela, faça upload da imagem no  site https://imgur.com/ e cole a URL de  compartilhamento no campo de  resposta.
+https://imgur.com/a/oirRfwH
+14. Faça uma breve pesquisa e responda o que é uma gramática ambígua, fornecendo um exemplo para ilustrar esta situação.
+Uma gramática livre de contexto é ambígua se houver pelo menos uma palavra que possa ter múltiplas estruturas. Ou seja, uma gramática será ambígua se puder gerar uma sentença a partir de mais de um conjunto de árvores de derivação (derivação mais à esquerda/derivação mais à direita). Esse problema de ambiguidade é significativo no projeto de compiladores, pois a criação das árvores de derivação fornece a base para a execução semântica do código. Quando uma expressão possui duas árvores de derivação válidas, o computador não consegue determinar qual interpretação deve seguir. Um exemplo de ambiguidade gramatical é este exemplo de uma gramática genérica para a representação de expressões matemáticas. E representa qualquer expressão matemática que consista em múltiplas operações matemáticas, enquanto a representa uma variável ou um número. Por exemplo, considere a compilação da seguinte expressão: a + a * a. O compilador deve determinar como estruturar a árvore de análise sintática associada, pois a gramática fornecida pode produzir a expressão em duas estruturas de árvore/análise sintática diferentes (veja abaixo). Para ajudar a explicar como o computador fica "confuso", forneci abaixo uma visualização interativa que mostra as duas possíveis árvores de análise sintática para a mesma string ou expressão, com base na gramática genérica fornecida e mostrada acima.
+
+

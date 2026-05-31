@@ -1,0 +1,52 @@
+24/02/2026
+C05 - LISTA DE EXERCÍCIOS 1.
+1. O que são os Paradigmas das Linguagens de Programação e como são classificados? Explique.
+É um conjunto de características que servem para categorizar um grupo de linguagens.
+- Imperativo - Dá as instruções de como o computador deve fazer -> Estruturado, Orientado a Objetos e Concorrente.
+- Declarativo - Foca em o que o computador deve fazer -> Funcional e Lógico.
+e tem a Multiparadigma - suporta mais de um paradigma.
+ 
+2. Quanto às gerações das Linguagens de Programação, como elas podem ser classificadas? Cite um exemplo de linguagem pertencente a cada uma delas.
+1° Geração - linguagens de máquinas, ex: 0 e 1.
+2° Geração - linguagens de montagem, ex: assembly.
+3° Geração - linguagens de alto nível, ex: java.
+4° Geração - linguagens para aplicações específicas não procedurais, ex: SQL.
+5° Geração - linguagens baseada em lógicas matemáticas e que da suporte na programação de IA, ex: prolog.
+ 
+3. O que são Tradutores de Linguagens de Programação? Quais os tipos mais populares e suas principais diferenças?
+Compiladores - Traduz um código-fonte para um código-objeto, de uma vez só.
+Interpretadores - Traduz e executam o código-fonte linha por linha.
+ 
+4. O que são Bibliotecas ("libraries" ou "libs")? Todas elas podem ser facilmente adicionadas ou removidas pelos desenvolvedores em seus códigos? Explique.
+São arquivos auxiliares que possuem diversas funções especificas. Nem todas, pois algumas são inseridas antes de utilizar, e outras podem ser uma das fases.
+ 
+5. Que estratégias podem ser usadas pelos Compiladores ao detectarem possíveis erros durante o processo de Compilação? Explique.
+Tratador de Erros.
+- Abortar - Para a compilação em qualquer fase.
+- Recuperar - Tentar continuar o processo de compilação.
+ 
+6. Em um processo de Compilação, quais são as fases geralmente envolvidas? Explique sucintamente o papel de cada uma delas.
+Fases: Programa-Fonte, Análise Léxica, Análise Sintática, Análise Semântica, Geração de Códigos Intermediário, Otimização de Código, Geração de Código Alvo, Programa-Objetos, Gerenciador de Tabelas de Símbolos, Tratador de Erros.
+- Programa-Fonte - É um conjunto com comandos, instruções e lógicas.
+- Análise Léxica - Ler caracter a caracter do código, buscando identificar sequências significativas.
+- Análise Sintática - Utiliza os tokens produzidos pelo analisador para criar uma representação intermediária do tipo árvore.
+- Análise Semântica - Utiliza a árvore sintática e as informações da tabela de símbolos para verificar a consistência semântica do código-fonte com definição da linguagem.
+- Geração de Códigos Intermediário - Traduz de um código-fonte para um código-objeto, o compilador pode produzir uma ou mais representação.
+- Otimização de Código - Transformações no código intermediário com objetivo de produzir um código melhor, mais rápidos.
+- Geração de Código Alvo - Gera a saída do compilador, gerando em linguagem assembly.
+- Programa-Objetos - Código da máquina.
+- Gerenciador de Tabelas de Símbolos - Armazenar informações de todos os identificadores (váriáveis e palavras-chaves) durante a compilação.
+- Tratador de Erros - Tratar erros em qualquer uma fases de compilação, como abortar e recuperar.
+ 
+7. O que você entende por Compilação Cruzada? Dê exemplos de dispositivos que podem/devem utilizar desta técnica para executar seus programas.
+É um técnica usada para compilar programas de uma plataforma Y a partir de uma plataforma X, ex: arduino, sistema embarcada.
+ 
+8. O que você entende por Compiladores Híbridos e qual o diferencial desta abordagem? Explique.
+Que são linguagens híbridas, o compilador terá o papel de converter o código fonte em um código chamando de bytecode.
+O diferencial é a mistura do compilador e do interpretador, e o equilíbrio em portabilidade e desempenho.
+
+9. Além do processo de tradução de Linguagens de Programação, cite duas outras áreas que a Teoria de Compiladores pode ser utilizada para resolver problemas computacionais.
+Otimização e Processamento de linguagem natural.
+ 
+10. Existe a Linguagem de Programação perfeita? Para ajudar a responder esta pergunta, analise as Propriedades Desejáveis das Linguagens de Programação e dê sua opinião.
+Não, não existe uma linguagem perfeita e universal. Pois as linguagens são criada para ajudar a resolver o problema.

@@ -1,0 +1,21 @@
+C05 - Lista de Exercícios 6 (2025/2)
+Não otimize autômatos gerados com Thompson!!!
+Olá, caroline.souza@ges.inatel.br. Quando você enviar este formulário, o proprietário verá seu nome e endereço de email.
+1.Traduza a Expressão Regular abaixo em um AFN utilizando as regras da Construção de Thompson.
+
+(ab|c)*
+
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+https://imgur.com/a/VfVVgzS
+2.Traduza a Expressão Regular abaixo em um AFN utilizando as regras da Construção de Thompson.
+
+a*|(bc)+
+
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+https://imgur.com/a/zFAS4uF
+3.Traduza a Expressão Regular abaixo em um AFN utilizando as regras da Construção de Thompson.
+
+(a|b)*(01)+
+
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+https://imgur.com/a/4lCbnRL

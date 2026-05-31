@@ -1,0 +1,46 @@
+C05 - Lista de Exercícios 3
+
+1. Qualquer sequência de números que iniciam com 10.
+	^10[0-9]*$
+
+2. Qualquer sequência de números que terminam com três 1’s consecutivos.
+	^[0-9]*111$
+
+3. Qualquer sequência de números que deve começar com 1 e terminar com 0.
+	^1[0-9]*0$
+
+4. Qualquer sequência de números que deve conter pelo menos três 1s (em qualquer posição da String) – Ex: 111, 010011, 1001101...
+	^([0-9]*1[0-9]*){3,}$
+
+5. Qualquer sequência de números que deve ter a substring 0101 (ou seja, este conjunto de caracteres todos juntos no meio da sua String) – Ex: 0101, 001011, 11010100...
+	^[0-9]*0101[0-9]*$
+
+6. Qualquer sequência de números de comprimento 3.
+	^[0-9]{3}$
+
+7. Qualquer sequência de números que tem comprimento maior que 3.
+	^[0-9]{4,}$
+
+8. Qualquer sequência de números com comprimento mínimo três e seu terceiro símbolo é 0.
+	^[0-9]{2}0[0-9]*{3,}$
+
+9. Qualquer sequência de números que tem comprimento de no máximo 3.
+	^[0-9]{,3}$
+
+10. Qualquer sequência de números com comprimento múltiplo de 3 – Ex: 001, 010101...
+	^([0-9]{3}+)$
+
+11. Qualquer sequência de números que formam cadeias que iniciam com 1 e não terminam com 0 – Ex: 1, 1001, 110001...
+	^1[0-9]*[1-9]$
+
+12. Cadeias com quantidade par de símbolos – Ex: 00, 01, 1001...
+	^([0-9]{2})*$
+
+13. Cadeias com quantidade ímpar de símbolos – Ex: 0, 111, 10001...
+	^([0-9]{2}*[0-9])$
+
+14. Qualquer sequência de números que tem comprimento diferente de 3.
+	^([0-9]{,2}|[0-9]{4,})$
+
+15. Contém pelo menos dois 0’s e no máximo um número 1 – Ex: 00, 001, 10000...
+	^(0{2,}|10{2,}|0{2,}1|0+10+)$

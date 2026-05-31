@@ -1,0 +1,32 @@
+Instruções: 
+- 1 resposta por pessoa;
+- Cópia = nota 0 para as cópias e para os copiados;
+- ChatGPT = nota 0
+- Descreva seu entendimento de forma clara, aproveite a lista de exercícios para consolidar os conceitos e fundamentos da disciplina! :)
+
+
+------------------LINKS--------------------
+
+LE1 -> Introdução
+Link: https://forms.office.com/r/YDnUCrZUpZ
+
+LE2 -> Análise Léxica
+Link: https://forms.cloud.microsoft/r/saaseyJDBP
+
+LE3 -> REGEx
+Link: https://forms.cloud.microsoft/r/JESsJ7b9ZJ
+
+LE4 -> REGEx + Python
+Link: https://forms.cloud.microsoft/r/yKkaGr8swm
+
+LE5 -> AFD/AFN
+Link: 
+
+LE6 -> Thompson
+Link:
+
+LE7 -> Transformação AFN-AFD
+Link: 
+
+LE8 -> Análise Sintática
+Link: 

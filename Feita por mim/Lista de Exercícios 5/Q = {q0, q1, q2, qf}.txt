@@ -1,0 +1,12 @@
+Q = {q0, q1, q2, qf}
+Σ = {a, b}
+δ(q0, a) = {q0, q1}
+δ(q0, b) = {q0, q2}
+δ(q1, a) = {qf}
+δ(q1, b) = ∅
+δ(q2, a) = ∅
+δ(q2, b) = {qf}
+δ(qf, a) = {qf}
+δ(qf, b) = {qf}
+q0 = estado inicial
+F = {qf}
