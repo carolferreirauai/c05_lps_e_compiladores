@@ -1,0 +1,33 @@
+C05 - Lista de Exercícios 5
+
+1. A partir da Tabela de Transição abaixo, desenhe seu Diagrama de Estado e represente sua Quíntupla A = (Q, Σ, δ, q0, F).
+Observação 1: ">" representa o estado inicial, e "*" o estado final / de aceitação.
+Observação 2: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+
+
+2. Crie um Diagrama de Estado (do tipo AFD) que represente o enunciado abaixo:
+	L1 = { x | x ∈ {0,1}* mas x começa com 1};
+	Ex: 1, 1000, 10101...
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+
+
+3. Crie um Diagrama de Estado (do tipo AFD) que represente o enunciado abaixo:
+	L2 = { x | x ∈ {a,b}* mas x possui um número ímpar de b’s}; 
+	Ex: b, bbb, ba, bababa...
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+
+
+4. Crie um Diagrama de Estado (do tipo AFD) que represente o enunciado abaixo:
+	L3 = { x | x ∈ {0,1}* mas x finaliza com 00};
+	Ex: 00, 100, 0100, 101000...
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+
+
+5. Crie um Diagrama de Estado (do tipo AFD) que represente o enunciado abaixo:
+	L4 = { x | x ∈ {0,1}* mas x contém exatamente três 0’s, em qualquer posição};
+	Ex: 000, 0100, 1010011...
+Observação: faça o diagrama no JFLAP, tire uma captura de tela dele, faça upload da imagem no site https://imgur.com/ e cole a URL de compartilhamento no campo de resposta.
+
+
+6. Para o AFN ao lado, apresente sua Quíntupla A = {Q, Σ, δ, q0, F}.
+Observação: faça o diagrama no JFLAP, tire uma captura de tela  dele, faça upload da imagem no site https://imgur.com/ e cole a URL de  compartilhamento no campo de resposta.

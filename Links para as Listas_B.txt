@@ -20,13 +20,13 @@ LE4 -> REGEx + Python
 Link: https://forms.cloud.microsoft/r/yKkaGr8swm
 
 LE5 -> AFD/AFN
-Link: 
+Link: https://forms.office.com/r/dAir925p4S
 
 LE6 -> Thompson
-Link:
+Link: https://forms.cloud.microsoft/r/VUYbSQ1KSh
 
 LE7 -> Transformação AFN-AFD
-Link: 
+Link: https://forms.cloud.microsoft/r/qcy5TrDZKz
 
 LE8 -> Análise Sintática
-Link: 
+Link: https://forms.cloud.microsoft/r/ceM2xFkTW5
